@@ -9,13 +9,8 @@ public class Main {
       double lineA=lineComparison.scannerMethod();
       System.out.println("Enter Line 'B' co-ordinator's ");
       double lineB=lineComparison.scannerMethod();
-      if(lineA==lineB)
-      {
-    	  System.out.println("Line A and Line B are Equal");
-      }
-      else {
-    	  System.out.println("Line A and Line B are Not Equal");
-      }
+      Comparison comparison =new Comparison();
+      comparison.comparison(lineA, lineB);
       
 	}
 
